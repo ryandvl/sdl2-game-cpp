@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-g",
+          "main.cpp",
+          "-Isdl/include",
+          "-Lsdl/lib",
+          "-o",
+          "main",
+          "-lmingw32",
+          "-lSDL2main",
+          "-lSDL2"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "detail": "Generated task for C++"
+      },
+      {
+        "label": "Run Executable",
+        "type": "shell",
+        "command": "${workspaceFolder}/main.exe",
+        "group": {
+          "kind": "none",
+          "isDefault": false
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
