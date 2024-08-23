@@ -4,15 +4,7 @@
       {
         "label": "build",
         "type": "shell",
-        "command": "g++",
-        "args": [
-          "-std=c++20",
-          "-g", "src/*.cpp",
-          "-Isdl/include", "-Iheaders",
-          "-Lsdl/lib",
-          "-o", "main",
-          "-lmingw32", "-lSDL2main", "-lSDL2"
-        ],
+        "command": "mingw32-make run",
         "group": {
           "kind": "build",
           "isDefault": true
@@ -23,9 +15,28 @@
         "detail": "Generated task for C++"
       },
       {
+        "label": "make clean",
+        "type": "shell",
+        "command": "mingw32-make -f Makefile clean",
+        "group": {
+          "kind": "none",
+          "isDefault": false
+        }
+      },
+      {
         "label": "Run Executable",
         "type": "shell",
-        "command": "${workspaceFolder}/main.exe",
+        "command": "${workspaceFolder}/bin/main.exe",
+        "group": {
+          "kind": "none",
+          "isDefault": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Makefile Clean",
+        "type": "shell",
+        "command": "mingw32-make clean",
         "group": {
           "kind": "none",
           "isDefault": false

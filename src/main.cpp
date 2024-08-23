@@ -4,7 +4,7 @@
 #include <format>
 
 #include "game.h"
-#include "console.h"
+#include "utils/console.h"
 
 using namespace std;
 
