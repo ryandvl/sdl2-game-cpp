@@ -1,16 +1,5 @@
-<<<<<<< HEAD
 # ONLY WINDOWS
 
-CXX = g++
-
-CXXFLAGS = -std=c++20 -g -Ilib/SDL/include -Iheaders
-
-LDFLAGS = -Llib/SDL/lib -lmingw32 -lSDL2main -lSDL2
-
-SRC_DIR = src
-OBJ_DIR = obj
-BIN_DIR = bin
-=======
 CXX = g++
 
 CXXFLAGS = -std=c++20 -g -Ilib/sdl/include -Iheaders
@@ -19,8 +8,7 @@ LDFLAGS = -Llib/sdl/lib -lmingw32 -lSDL2main -lSDL2
 
 SRC_DIR = src
 OBJ_DIR = obj
-BIN_DIR = dist
->>>>>>> 4ef7767fbc858fd95ad5f2de498b5b1d99b71f1d
+BIN_DIR = bin
 
 TARGET = $(BIN_DIR)/main
 

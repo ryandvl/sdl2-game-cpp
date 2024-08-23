@@ -2,8 +2,8 @@
   "editor.tabSize": 4,
 
   "files.exclude": {
-    // "sdl/": true,
-    // "dist/": true,
+    "bin/": true,
+    "lib/": true,
     "*.dll": true
   },
 
