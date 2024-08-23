@@ -4,7 +4,7 @@
   "files.exclude": {
     "bin/": true,
     "lib/": true,
-    "*.dll": true
+    // "*.dll": true
   },
 
   "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
