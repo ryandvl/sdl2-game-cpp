@@ -1,5 +1,5 @@
-#include "console.h"
-#include "date.h"
+#include "utils/console.h"
+#include "utils/date.h"
 
 void Console::print(std::string message) {
     if(message.empty()) return;

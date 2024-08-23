@@ -1,3 +1,3 @@
-/sdl/
-
-main.exe
+/dist/
+/obj/
+/lib/*
