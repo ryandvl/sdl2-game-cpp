@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # BIN_DIR
 /bin/
 
 /obj/
 /*.dll
 /lib/SDL/*
+=======
+/dist/
+/obj/
+/lib/*
+>>>>>>> 4ef7767fbc858fd95ad5f2de498b5b1d99b71f1d

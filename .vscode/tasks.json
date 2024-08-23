@@ -26,7 +26,11 @@
       {
         "label": "Run Executable",
         "type": "shell",
+<<<<<<< HEAD
         "command": "${workspaceFolder}/bin/main.exe",
+=======
+        "command": "${workspaceFolder}/dist/main.exe",
+>>>>>>> 4ef7767fbc858fd95ad5f2de498b5b1d99b71f1d
         "group": {
           "kind": "none",
           "isDefault": false
