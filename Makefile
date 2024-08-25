@@ -2,15 +2,15 @@
 
 CXX = g++
 
-CXXFLAGS = -std=c++20 -g -Ilib/sdl/include -Iheaders
+CXXFLAGS = -std=c++20 -g -Ilib/sdl/include -Iinclude
 
-LDFLAGS = -Llib/sdl/lib -lmingw32 -lSDL2main -lSDL2
+LDFLAGS = -Llib/sdl/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
 
 SRC_DIR = src
 OBJ_DIR = obj
 BIN_DIR = bin
 
-TARGET = $(BIN_DIR)/main
+TARGET = $(BIN_DIR)/debug/game
 
 MAIN_SRC = $(SRC_DIR)/main.cpp
 MAIN_OBJ = $(OBJ_DIR)/main.o

@@ -1,7 +1,13 @@
-# BIN_DIR
 /bin/
 
+# Object Files
 /obj/
+
+# Libraries
 /lib/
 
+# Shared Objects
 *.dll
+
+# Backup
+/backup/

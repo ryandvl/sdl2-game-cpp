@@ -17,7 +17,7 @@
       {
         "label": "Run Executable",
         "type": "shell",
-        "command": "${workspaceFolder}/bin/main.exe",
+        "command": "${workspaceFolder}/bin/debug/game.exe",
         "group": {
           "kind": "none",
           "isDefault": false

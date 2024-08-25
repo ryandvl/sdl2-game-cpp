@@ -1,10 +1,16 @@
 {
   "editor.tabSize": 4,
+  // "editor.wordWrap": "wordWrapColumn",
+  // "editor.wordWrapColumn": 60,
+  "workbench.colorTheme": "Omni",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.editorActionsLocation": "hidden",
 
   "files.exclude": {
     "bin/": true,
+    "obj/": true,
     "lib/": true,
-    // "*.dll": true
+    "*.dll": true
   },
 
   "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",

@@ -3,6 +3,9 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <SDL.h>
+
+#include "utils/string.hpp"
 
 const std::map<std::string, std::string> COLORS = {
     {"<reset>", "0"},
@@ -18,9 +21,16 @@ const std::map<std::string, std::string> COLORS = {
     {"<white>", "37"}
 };
 
-class Console {
+class Console
+{
     public:
-        static void print(std::string message);
+        static void print(const char* message);
+        static void print(const std::string message) {
+            print(message.c_str());
+        };
+        static const char* getOSName();
+        static const char* getGraphicsCardInfo(SDL_Renderer* renderer);
+        static const char* getSDLVersion();
 
     private:
           
