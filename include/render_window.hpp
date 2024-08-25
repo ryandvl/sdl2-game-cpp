@@ -4,7 +4,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
-#include "utils/console.hpp"
+#include "util/console.hpp"
 #include "entity/entity.hpp"
 
 class RenderWindow
@@ -19,6 +19,9 @@ class RenderWindow
         void clear();
         void render(Entity& entity);
         void display();
+
+        SDL_Window* getWindow();
+        SDL_Renderer* getRenderer();
     private:
         SDL_Window* window;
         SDL_Renderer* renderer;

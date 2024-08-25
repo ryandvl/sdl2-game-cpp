@@ -5,7 +5,7 @@
 #include <string>
 #include <SDL.h>
 
-#include "utils/string.hpp"
+#include "util/string.hpp"
 
 const std::map<std::string, std::string> COLORS = {
     {"<reset>", "0"},
@@ -29,8 +29,7 @@ class Console
             print(message.c_str());
         };
         static const char* getOSName();
-        static const char* getGraphicsCardInfo(SDL_Renderer* renderer);
-        static const char* getSDLVersion();
+        static const std::string getSDLVersion();
 
     private:
           

@@ -3,7 +3,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
-#include "utils/math.hpp"
+#include "util/math.hpp"
 
 class Entity
 {

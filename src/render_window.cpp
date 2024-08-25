@@ -16,6 +16,7 @@ RenderWindow::RenderWindow(
 
     if (window == NULL) {
         std::cout << "Window failed to init: " << SDL_GetError() << std::endl;
+        SDL_Quit();
     }
 
     renderer = SDL_CreateRenderer(
@@ -26,6 +27,7 @@ RenderWindow::RenderWindow(
 
     if (renderer == NULL) {
         std::cout << "Renderer failed to init: " << SDL_GetError() << std::endl;
+        SDL_Quit();
     }
 
     Console::print("<green>Window loaded!");
@@ -80,4 +82,14 @@ void RenderWindow::render(Entity& entity)
 void RenderWindow::display()
 {
     SDL_RenderPresent(renderer);
+}
+
+SDL_Window* RenderWindow::getWindow()
+{
+    return window;
+}
+
+SDL_Renderer* RenderWindow::getRenderer()
+{
+    return renderer;
 }

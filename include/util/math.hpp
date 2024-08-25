@@ -4,7 +4,7 @@
 #include <string>
 #include <format>
 
-#include "utils/console.hpp"
+#include "util/console.hpp"
 
 struct Vector2f
 {

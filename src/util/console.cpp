@@ -1,5 +1,5 @@
-#include "utils/console.hpp"
-#include "utils/date.hpp"
+#include "util/console.hpp"
+#include "util/date.hpp"
 
 void Console::print(const char* message)
 {
@@ -37,20 +37,7 @@ const char* Console::getOSName()
     return "Unknown OS";
 }
 
-const char* Console::getGraphicsCardInfo(
-    SDL_Renderer* renderer
-)
-{
-    SDL_RendererInfo info;
-
-    if (SDL_GetRendererInfo(renderer, &info) == 0) {
-        return info.name;
-    }
-
-    return "Unknown Graphic Card";
-}
-
-const char* Console::getSDLVersion()
+const std::string Console::getSDLVersion()
 {
     SDL_version sdlVersion;
     SDL_GetVersion(&sdlVersion);
@@ -59,5 +46,5 @@ const char* Console::getSDLVersion()
         std::to_string(static_cast<int>(sdlVersion.minor)) + "." +
         std::to_string(static_cast<int>(sdlVersion.patch));
 
-    return versionString.c_str();
+    return versionString;
 }
