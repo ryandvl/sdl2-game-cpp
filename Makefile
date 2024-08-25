@@ -4,7 +4,7 @@ CXX = g++
 
 CXXFLAGS = -std=c++20 -g -Ilib/sdl/include -Iinclude
 
-LDFLAGS = -Llib/sdl/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+LDFLAGS = -Llib/sdl/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 
 SRC_DIR = src
 OBJ_DIR = obj
